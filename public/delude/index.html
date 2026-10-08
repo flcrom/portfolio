@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vardhman Bengani - Software Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Vardhman Bengani"><meta property="og:title" content="Vardhman Bengani - Software Engineer"><meta property="og:description" content="Portfolio of Vardhman Bengani, software engineer."><meta property="og:url" content="https://flcrom.dev/delude/"><meta property="og:image" content="https://flcrom.dev/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Vardhman Bengani, Software Engineer"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Vardhman Bengani - Software Engineer"><meta name="twitter:image" content="https://flcrom.dev/og.png">
+<style>
+:root{--bg:#fafafa;--fg:#0a0a0a;--mute:#52525b;--line:#0a0a0a;--soft:#e4e4e7;--s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;
+--sans:Inter,"Helvetica Neue",Arial,sans-serif;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:400 15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.mono{font-family:var(--mono);font-size:13px}
+.label{font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:var(--s3)}
+.wrap{max-width:1200px;margin:0 auto;padding:var(--s4)}
+header{border:1px solid var(--line);display:grid;grid-template-columns:2fr 1fr}
+header>div{padding:var(--s4)}
+header>div+div{border-left:1px solid var(--line)}
+h1{font:600 clamp(32px,5vw,56px)/1.05 var(--sans);letter-spacing:-.03em}
+.role{margin-top:var(--s2);color:var(--mute)}
+nav{display:flex;flex-wrap:wrap;gap:var(--s2);margin:var(--s3) 0}
+nav a,.chip{font:500 12px/1 var(--mono);border:1px solid var(--line);padding:8px 10px;text-decoration:none;background:transparent;color:var(--fg);cursor:pointer}
+nav a:hover,.chip:hover{background:var(--fg);color:var(--bg)}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.cell{grid-column:span 4;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:var(--s4)}
+.s6{grid-column:span 6}.s8{grid-column:span 8}.s12{grid-column:span 12}.s3{grid-column:span 3}
+.metric{font:500 40px/1 var(--mono);letter-spacing:-.02em}
+.metric small{font-size:15px;color:var(--mute)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px var(--s3)}
+.kv dt{color:var(--mute);font:400 13px var(--mono)}.kv dd{margin:0}
+ul{padding-left:18px}li{margin:6px 0}
+h2{font:600 18px/1.3 var(--sans);letter-spacing:-.01em}
+.meta{font:400 12px var(--mono);color:var(--mute);margin:2px 0 var(--s3)}
+.entry+.entry{margin-top:var(--s4);padding-top:var(--s4);border-top:1px solid var(--soft)}
+.filters{display:flex;gap:var(--s2);flex-wrap:wrap;margin-bottom:var(--s3)}
+table{width:100%;border-collapse:collapse}
+td{padding:8px 0;border-top:1px solid var(--soft);vertical-align:top}
+td:first-child{width:130px;font:500 13px var(--mono)}
+tr[hidden]{display:none}
+footer{margin-top:var(--s4);font:400 12px var(--mono);color:var(--mute)}
+@media(max-width:800px){header{grid-template-columns:1fr}header>div+div{border-left:0;border-top:1px solid var(--line)}
+#skills .kv{grid-template-columns:1fr}.cell,.s6,.s8,.s3,.cell[style]{grid-column:span 12 !important;border-left:0 !important}.wrap{padding:var(--s3)}}
+
+.shot{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.shots{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s4)}
+.shots figure{margin:0}.shots figcaption{font:400 12px var(--mono);color:var(--mute);margin-top:var(--s2)}
+.btn{display:inline-block;font:500 13px/1 var(--mono);border:1px solid var(--line);padding:12px 14px;text-decoration:none;background:var(--fg);color:var(--bg)}
+.btn:hover{background:var(--bg);color:var(--fg)}
+.pl{font:500 12px/1 var(--mono);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;white-space:nowrap}
+.back{font:500 12px var(--mono);margin-bottom:var(--s3);display:inline-block}
+@media(max-width:800px){.shots{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div class="wrap">
+<header><div><a class="back" href="/">&larr; Vardhman Bengani</a><div class="label">Project</div><h1>Delude</h1><p class="role">Shopify / storefront for a UAE streetwear brand (freelance) / Sep 2026 - Present</p></div>
+<div><div class="label">Live site</div><p style="margin-bottom:16px"><a href="https://delude.shop">delude.shop</a></p><a class="btn" href="https://delude.shop" target="_blank" rel="noopener">Visit delude.shop &nearr;</a></div></header>
+<main class="grid" style="margin-top:var(--s4)">
+<section class="cell s12"><div class="label">About</div><ul><li>Built the UAE streetwear brand's first store on Shopify, moving it off an Instagram-only presence.</li><li>Chaptered drop catalog, eleven-chapter archive and pop-up event pages (Sikka Dubai, VILLA AUM&Eacute;DAN).</li><li>Class-hoodie ordering flow for graduating classes.</li></ul></section>
+<section class="cell s12"><div class="label">Screenshots</div><div class="shots"><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-1.jpg" alt="Delude screenshot: Home page"></a><figcaption>Home page</figcaption></figure><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-2.jpg" alt="Delude screenshot: Products collection"></a><figcaption>Products collection</figcaption></figure><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-3.jpg" alt="Delude screenshot: Product grid"></a><figcaption>Product grid</figcaption></figure></div></section>
+</main>
+<footer><a href="/">Index</a> / Vardhman Bengani / <a href="mailto:vardhman.47th@gmail.com">vardhman.47th@gmail.com</a></footer></div>
+<script>document.querySelectorAll('a[href^="http"]').forEach(function(a){a.target='_blank';a.rel='noopener'});</script></body></html>
