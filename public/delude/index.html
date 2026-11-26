@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Vardhman Bengani"><meta property="og:title" content="Vardhman Bengani - Software Engineer"><meta property="og:description" content="Portfolio of Vardhman Bengani, software engineer."><meta property="og:url" content="https://flcrom.dev/delude/"><meta property="og:image" content="https://flcrom.dev/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Vardhman Bengani, Software Engineer"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Vardhman Bengani - Software Engineer"><meta name="twitter:image" content="https://flcrom.dev/og.png">
+<meta name="color-scheme" content="dark light">
+<script>(function(){var t;try{t=localStorage.getItem("theme")}catch(e){}if(t!=="light")t="dark";document.documentElement.setAttribute("data-theme",t)})()</script>
 <style>
 :root{--bg:#fafafa;--fg:#0a0a0a;--mute:#52525b;--line:#0a0a0a;--soft:#e4e4e7;--s1:4px;--s2:8px;--s3:16px;--s4:24px;--s5:40px;
 --sans:Inter,"Helvetica Neue",Arial,sans-serif;--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
@@ -54,6 +56,11 @@ footer{margin-top:var(--s4);font:400 12px var(--mono);color:var(--mute)}
 .pl{font:500 12px/1 var(--mono);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:2px;white-space:nowrap}
 .back{font:500 12px var(--mono);margin-bottom:var(--s3);display:inline-block}
 @media(max-width:800px){.shots{grid-template-columns:1fr}}
+
+:root{color-scheme:dark}
+:root[data-theme="dark"]{--bg:#0a0a0a;--fg:#fafafa;--mute:#a1a1aa;--line:#d4d4d8;--soft:#27272a}
+:root[data-theme="light"]{color-scheme:light}
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:50;font:500 12px/1 var(--mono);border:1px solid var(--line);background:var(--bg);color:var(--fg);padding:10px 12px;cursor:pointer}.theme-toggle:hover{background:var(--fg);color:var(--bg)}
 </style>
 </head>
 <body><div class="wrap">
@@ -64,4 +71,6 @@ footer{margin-top:var(--s4);font:400 12px var(--mono);color:var(--mute)}
 <section class="cell s12"><div class="label">Screenshots</div><div class="shots"><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-1.jpg" alt="Delude screenshot: Home page"></a><figcaption>Home page</figcaption></figure><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-2.jpg" alt="Delude screenshot: Products collection"></a><figcaption>Products collection</figcaption></figure><figure><a href="https://delude.shop" target="_blank" rel="noopener"><img class="shot" loading="lazy" src="/img/delude-3.jpg" alt="Delude screenshot: Product grid"></a><figcaption>Product grid</figcaption></figure></div></section>
 </main>
 <footer><a href="/">Index</a> / Vardhman Bengani / <a href="mailto:vardhman.47th@gmail.com">vardhman.47th@gmail.com</a></footer></div>
-<script>document.querySelectorAll('a[href^="http"]').forEach(function(a){a.target='_blank';a.rel='noopener'});</script></body></html>
+<script>document.querySelectorAll('a[href^="http"]').forEach(function(a){a.target='_blank';a.rel='noopener'});</script><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch between dark and light mode"></button>
+<script>(function(){var r=document.documentElement,b=document.getElementById("themeToggle");function s(){b.textContent=r.getAttribute("data-theme")==="dark"?"Light mode":"Dark mode"}s();b.addEventListener("click",function(){var n=r.getAttribute("data-theme")==="dark"?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}s()})})();</script>
+</body></html>
